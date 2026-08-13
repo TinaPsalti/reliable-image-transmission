@@ -4,7 +4,7 @@ This application is a Python client-server system that demonstrates reliable ima
 
 This project combines LZ78 compression, cyclic error detection and correction as well as SHA-256 verification to reconstruct transmitted images even when errors are introduced during transmission.
 
-Developed as an individual second-year project for the University of Piraeus.
+Originally developed as a second-year group project for the University of Piraeus. The codebase in this repository is the version I substantially reworked and completed after the initial implementation was not functioning correctly.
 
 ## Features
 - Custom implementation of LZ78 compression and decompression
@@ -86,6 +86,19 @@ The receiver runs a Flask server that:
 - Calculates the SHA-256 hash and entropy of the reconstructed data
 - Compares the reconstructed file against the original integrity information
 - Reports whether the image was successfully recovered
+
+## My Contributions
+
+My contribution focused on turning the existing implementation into a working end-to-end system. I substantially reworked the original codebase, including debugging and replacing major parts of the implementation where necessary.
+
+My work included:
+
+- Debugging and reworking major parts of the existing implementation
+- Resolving issues that prevented the full sender-receiver pipeline from functioning correctly
+- Integrating and validating the compression, transmission, error-correction and reconstruction stages
+- Testing the system under simulated transmission errors
+- Verifying successful reconstruction using SHA-256 and entropy comparison
+- Preparing the repository structure and technical documentation for this version of the project
 
 ## Project Structure
 
@@ -268,12 +281,12 @@ Through this project I gained practical experience with:
 
 ## Academic Context
 
-This project was developed as an individual university assignment at the University of Piraeus in the area of Information Theory and Coding.
+This project was originally developed as a group university assignment at the University of Piraeus in the area of Information Theory and Coding. This repository contains the substantially revised working version that I completed and documented.
 
 The original academic report is available:
 docs/university-report.pdf
 
-## Author 
+## Repository Maintainer
 
 Stamatia Erato Psalti 
 
